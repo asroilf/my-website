@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{%load static%}
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Top HN stories</title>     
+        <script src="scrit.js"></script>
+        <link rel="icon" type="image/png" href="#"/>
+        <link href="{% static 'topHN/style.css' %}" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    </head>
+
+    <body>
+        <header>
+
+            <div id="navigation">
+                <div id="nav">
+                    <a href="{% url 'main:Main' %}""><button>Back to Main</button></a>
+                </div>
+            </div>
+
+            <div class="scroll-cont">
+              <div id="scroll-bar"></div>
+            </div>
+
+            <div id="main_face">
+                <div id="first_title">
+                    <h1>Here you can find the latest top stories from HackerNews!</h1>
+                </div>
+            </div>
+        </header>
+        {% for item in items %}
+        <!-- <div id="team_members"> -->
+            <div class="story">
+                <div class="storyB">
+                    <a href="{{item.url}}" target="_blank"><h2 class="title">{{item.title}}</h2></a>
+                    <p class="by">By: {{item.by}}</p>
+                    <ul>
+                        <li>time - {{item.time}}</li>
+                        <li>type - {{item.type}}</li>
+                        <li>score - {{item.score}}</li>
+                    </ul>
+                </div>
+            </div>
+        <!-- </div> -->
+        {% endfor %}
+    </body> 
+</html>

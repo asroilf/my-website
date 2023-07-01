@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    {% load static %}
+    <link href="{% static 'aboutMe/style.css'%}" rel="stylesheet">
+</head>
+<body>
+    <div id="navigation">
+        <div id="nav">
+        </div>
+    </div>
+    <div id="infoo">
+        <img src="../../static/aboutMe/pic.jpg" class="ai_pic">
+        <div class = "in">
+            <div class="tx">
+                <h1>Hi!</h1>
+                <p>I'm Asliddin Isroilov, and welcome to my page. Here I might upload some of my stuff so you could check it out.<br><br> Moreover, you can find me at...</p>
+            </div>
+            <div class="logos">
+                <a href="https://github.com/codeBroh" target="_blank" class="logos"><img src="../../static/aboutMe/github.png"> </a>
+                <a href="https://twitter.com/aisroilov_" target="_blank" class="logos"><img src="../../static/aboutMe/twitter.png"></a>
+                <a href="https://www.facebook.com/aii.ioo/" target="_blank" class="logos"><img src="../../static/aboutMe/fb.png"></a>
+                <a href="https://instagram.com/_ai.io" target="_blank" class="logos"><img src="../../static/aboutMe/insta.jpeg"</a>
+            </div>
+        </div>
+    </div>
+    <div class="project">
+    <a href="{% url 'topHN:stories' %}" target="_blank" class="hre"><div class="projectt">
+            <h2 class="title">HackerNews top stories</h2>
+    </div></a></div>
+
+
+    <div class="project">
+        <a href="#" target="_blank" class="hre"><div class="projectt">
+                <h2 class="title">My personal blog</h2>
+        </div></a></div>
+
+    
+    
+</body>
+</html>

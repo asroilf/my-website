@@ -1,0 +1,168 @@
+@import "https://unpkg.com/open-props";
+/* @import "https://unpkg.com/open-props/normalize.min.css"; */
+
+*{
+    background-image: url(Rr.jpeg);
+    background-attachment: fixed;
+    /* border: 1px solid red; */
+    font-family:'Courier New', Courier, monospace;
+    color:black;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+body{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+  
+/* .scroll-cont{
+    position: fixed;
+    margin-top: 40px;
+    margin-left: -7px;
+    z-index: 50;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+
+}
+  
+#scroll-bar{
+    height: 8px;
+    background-color: #e7df03;
+    width: 0%;
+} */
+
+#navigation{
+    margin-left: -7px;
+    background-color: #42424285;
+    background-image: none;
+    overflow:  hidden;
+    position: fixed;
+    height: 7%;
+    width: 100%;
+    transition: 0.4s;
+    top: 0;
+    z-index: 99;
+}
+#nav{
+    height: 25%;
+    width: 100%;
+    background-color: #ffd00085;
+    background-image: none;
+    float:right;
+}
+
+/* #main_face{
+    /* background-image: url('media/face_background.jpg'); -----?
+    margin-left: 20%;
+    margin-right: 20%;
+    height:700px;
+    display: grid;
+    vertical-align: center; 
+    align-items: center; 
+    text-align-last: center;
+}
+
+#first_title h1{
+    font-size: 400%;
+    width: auto ;
+}
+
+#first_title{
+    width: auto;
+    display: fixed;
+    align-items: center;
+    text-align: center;
+}
+
+#first_title h2{
+    font-size: 150%;
+} */
+
+#infoo{
+    margin: 5%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    display: flex;
+    border: 2px solid #000;
+    background-color: white;
+    background-image: none;
+    box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.932);
+}
+
+#infoo img{
+    width: 23%;
+    height: auto;
+}
+
+#infoo .in{
+    margin:5px;
+    margin-bottom: 1px;
+    padding: 5px;
+    position:relative;
+    background-image: none;
+}
+
+.tx{
+    margin-left: 5px;
+    margin-right: 10px;
+    background-image: none;
+}
+.tx p{
+    margin: 10px;
+    background-image: none;
+}
+.tx h1 {
+    background-image: none;
+}
+
+.in .logos{
+    margin-top: 50px;
+    margin-left: 5px;
+    background-image: none;
+}
+
+#infoo .logos a img{
+    width: 5%;
+    height: auto;
+    background-image: none;
+}
+
+.project{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    display: fixed;
+    border: 2px solid #000;
+    background-color: white;
+    background-image: none;
+    box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.932);
+    align-content: center;
+}
+
+.projectt{
+    background-image: none;
+    display: fixed;
+    align-items: center;
+    text-align: center;
+    margin-right: auto;
+}
+
+.hre, .hre h2{
+    background-image:none;
+}
+
+.foot{
+    display: flex;
+    position:relative;
+    align-content: center;
+    margin: -5px;
+    height:120ex;
+    background-color: black;
+    background-image: none;
+    color: white;
+    align-items: center;
+    
+}
